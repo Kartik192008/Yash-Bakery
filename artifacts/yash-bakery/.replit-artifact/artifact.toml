@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Yash Bakery"
+description = "A welcoming website for an Indian neighborhood bakery, showcasing its celebration cakes, savory snacks, shop atmosphere, and custom-order contact details."
+version = "1.0.0"
+id = "artifacts/yash-bakery"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18218
+
+[services.development]
+run = "pnpm --filter @workspace/yash-bakery run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/yash-bakery", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/yash-bakery/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18218"
+BASE_PATH = "/"
