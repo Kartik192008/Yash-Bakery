@@ -55,7 +55,7 @@ body { font-family:var(--app-font-sans); }
 .topline { background:#542619; color:#f4e8ca; padding:9px 5vw; font-size:10px; letter-spacing:.17em; text-transform:uppercase; display:flex; justify-content:space-between; }
 .nav { height:82px; padding:0 5vw; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #dfd3bd; background:#f5f0e4; position:relative; z-index:5; }
 .brand { text-decoration:none; color:#542619; display:flex; align-items:center; gap:11px; }
-.brand-mark { width:40px; height:40px; display:grid; place-items:center; color:#f5f0e4; background:#a93f27; font-family:'Yatra One',serif; font-size:22px; border-radius:50%; }
+.brand-logo { width:40px; height:40px; object-fit:contain; }
 .brand-name { font-family:'Playfair Display',serif; font-size:21px; line-height:1; font-weight:700; letter-spacing:-.04em; }
 .brand-sub { display:block; font-family:'DM Sans',sans-serif; font-size:8px; text-transform:uppercase; letter-spacing:.19em; margin-top:5px; }
 .nav-links { display:flex; gap:35px; align-items:center; }

@@ -36,7 +36,8 @@ function Home() {
       <div className="topline"><span>Yash Bakery <span aria-hidden="true">·</span> Cake, mithai & namkeen</span><span>A little celebration, every day</span></div>
       <header className="nav">
         <a className="brand" href="#home" aria-label="Yash Bakery home" onClick={() => setMenuOpen(false)}>
-          <span className="brand-mark">य</span><span><span className="brand-name">Yash Bakery</span><span className="brand-sub">Neighbourhood bakery & namkeen</span></span>
+          <img src="/images/logo.jpeg" alt="Yash Bakery" className="brand-logo" />
+          <span><span className="brand-name">Yash Bakery</span><span className="brand-sub">Neighbourhood bakery & namkeen</span></span>
         </a>
         <button className="menu-toggle" type="button" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)} data-testid="button-navigation">
           {menuOpen ? <X size={23} /> : <Menu size={23} />}
